@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air</title>
+    <link rel="stylesheet" href="styles.css">  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>  
+</head>
+<body>
+   <!-- Navbar -->
+   <navbar class="navbar" id="home">
+       <div class="navbar__wrapper">
+           <a href="#" class="logo"><i class="fas fa-plane-departure"></i></a>       
+       <div class="links">
+           <a href="#"> flights</a>
+           <a href="#"> hotels</a>
+           <a href="#"> cars</a>
+           <a href="#"> sign-in</a>
+           <a href="#" id="language"> language <i class="fas fa-angle-down"></i></a>
+       </div>
+       </div>
+   </navbar>
+
+<!-- language menu -->
+   <div class="language__menu">
+       <h2>Choose your language</h2>
+       <div class="language">
+           <a href="#">Romanian</a>
+           <a href="#">Italian</a>
+           <a href="#">Deutsch</a>
+           <a href="#">Spanish</a>
+           <a href="#">English</a>
+           <a href="#">Chinese</a>
+           <a href="#">French</a>
+           <a href="#">Swedish</a>
+       </div>
+   </div>
+
+   <!-- Main section -->
+   <main class="main">
+       <div class="main__wrapper">
+           <form action="" class="fly__form">               
+                   <input type="text" placeholder="from">
+                   <input type="text" placeholder="to">            
+
+                              
+                   <input type="date" placeholder="from">
+                   <input type="date" placeholder="from">
+               
+
+                   <input type="number" placeholder="1 adult">
+                   <input type="submit" value="search flights" id="submit__flights">
+
+           </form>
+       </div>
+   </main>
+
+
+   <!-- icons section -->
+   <section class="icons">       
+           <h2>Explore all our options</h2>
+
+           <div class="icons__wrapper">
+           <div class="icon">
+               <h3>All info on our website</h3>
+               <a href="" class="fas fa-question"></a>
+           </div> 
+           
+           <div class="icon">
+            <h3>Best flight options</h3>
+            <a href="" class="fas fa-plane"></a>
+        </div> 
+        <div class="icon">
+            <h3>Flights all over the world</h3>
+            <a href="" class="fas fa-map-signs"></a>
+        </div> 
+        <div class="icon">
+            <h3>24/7 customer support</h3>
+            <a href="" class="fas fa-headphones-alt"></a>
+        </div> 
+       </div>
+   </section>
+
+
+   <!-- flights section-->
+   <section class="swiper flights">
+    <h2>Don't miss your chance!</h2>
+       <div class="swiper-wrapper">           
+           <div class="swiper-slide flight">
+               <img src="images/rome.jpg" alt="rome">
+               <h3>Rome</h3>
+               <p>Cheap flight</p>
+               <p class="book">Book right now</p>
+            </div>
+            <div class="swiper-slide flight">
+                <img src="images/dusseldorf.jpg" alt="dusseldorf">
+                <h3>Dusseldorf</h3>
+                <p>Cheap flight</p>
+                <p class="book">Book right now</p>
+             </div>
+             <div class="swiper-slide flight">
+                <img src="images/london.jpg" alt="london">
+                <h3>London</h3>
+                <p>Cheap flight</p>
+                <p class="book">Book right now</p>
+             </div>
+             <div class="swiper-slide flight">
+                <img src="images/turin.jpg" alt="turin">
+                <h3>Turin</h3>
+                <p>Cheap flight</p>
+                <p class="book">Book right now</p>
+             </div>
+       </div>
+       
+       <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+       
+   </section> 
+   
+   
+   <!-- offers section -->
+   <section class="offers">
+       <h2>Our offers:</h2>
+       <div class="offers__wrapper">
+           <div class="offer">
+               <div class="skewed"></div>
+               <button> Basic </button>
+               <a href=""><p>Get to know more</p></a>
+           </div>
+
+           <div class="offer">
+            <div class="skewed"></div>
+            <button> Priority </button>
+            <a href=""><p>Get to know more</p></a>
+        </div>
+
+        <div class="offer">
+            <div class="skewed"></div>
+            <button> Business </button>
+            <a href=""><p>Get to know more</p></a>
+        </div>
+       </div>
+   </section>
+   
+   <!-- help section-->
+   <section class="help">
+       <div class="help__wrapper">
+           <div class="box">
+            <i class="far fa-question-circle"></i>
+            <div class="captions">
+               <h2> Need help? </h2>
+               <p> Read our most asked questions</p>
+            </div>
+           </div>
+
+           <div class="box">                          
+               <h2> Fly often? </h2>
+               <p> Try our apps and see how easy it is to book a flight</p>
+               <img src="images/apps.png" alt=""> 
+           </div>
+
+           <div class="box">            
+               <h2> Never miss a chance! </h2>
+               <p> Subscribe to our newsletter</p>
+               <button> Subscribe </button>
+           </div>
+       </div>
+   </section>
+
+   <!-- links -->
+   <section class="links">
+       <div class="links__wrapper">
+           <div class="link">
+               <h2>Informations center</h2>
+               <a href="#">General flight info</a>
+               <a href="#">Flight map</a>
+               <a href="#">Travel restrictions</a>
+               <a href="#">COVID</a>               
+           </div>
+           <div class="link">
+            <h2>Client relationships</h2>
+            <a href="#">General info</a>
+            <a href="#">Payments</a>
+            <a href="#">Luggage</a>                         
+        </div>
+        <div class="link">
+            <h2>Flights and destinations</h2>
+            <a href="#">Flight status</a>
+            <a href="#">Destinations</a>
+            <a href="#">Cancelling</a> 
+            <a href="#">Other flights</a>                         
+        </div>
+        <div class="link">
+            <h2>Our company</h2>
+            <a href="#">General informations</a>
+            <a href="#">News</a>                                   
+        </div>
+       </div>
+   </section>
+   
+
+   <!--footer-->
+   <footer class="footer">
+       <div class="footer__wrapper">
+       <h2>Follow us on</h2>
+       <div class="social__media">
+           <a href="" class="fab fa-facebook-square"></a>
+           <a href="" class="fab fa-instagram-square"></a>
+           <a href="" class="fab fa-youtube-square"></a>
+           <a href="" class="fab fa-twitter-square"></a>
+       </div>
+       </div>
+   </footer>
+
+    <script src="script/script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script/slider.js"></script>
+</body>
+</html>

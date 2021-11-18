@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+* {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+
+
+body {
+    background: url("images/body-background.png") no-repeat;
+    background-size: cover;
+}
+
+/* navbar styling */
+.navbar {    
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar__wrapper {
+    background: #EB0069;    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.navbar__wrapper .logo i {
+   color: #fff;
+   font-size: 3.5rem;   
+}
+
+.navbar__wrapper .links a{    
+    color: #fff;
+    text-transform: uppercase;
+    justify-content: space-between;
+}
+
+.navbar__wrapper .links a:hover {
+    background: #9E1050;
+}
+
+/* language menu styling */
+.language__menu {        
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    display: none;    
+    margin: 0 auto;
+    padding: 0 30px; 
+    transition: all 0.5s ease;  
+}
+
+.language__menu h2 {
+    color: #EB0069;
+    font-size: 1.3rem;
+    padding: 1rem 0; 
+    text-transform: uppercase;   
+}
+
+.language {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;  
+    width: 100%;    
+    height: 150px;   
+}
+
+.language a {
+    font-size: 0.8rem;
+    line-height: 1.5rem;    
+}
+
+.language a:hover {
+    background: #EAD0D0;
+    border: 0.1rem #EAD0D0;
+    border-radius: 4px;    
+}
+
+
+.language__menu.active {
+    display: block;
+    background: #fff;    
+    position: absolute;    
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: all 0.5s ease;
+}
+ 
+
+/* Main section styling */
+
+.main {
+    background: url("images/clouds.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:local;
+}
+
+.main__wrapper {
+    display: flex;    
+    justify-items: center;
+    align-items: center;
+}
+
+.main .main__wrapper form {
+    width: 450px;
+    height: 400px;      
+    margin: 2rem 1rem;
+    border: 0.1 solid rgb(121, 111, 111);
+    background: #EAD0D0;
+    border-radius: 4px; 
+    display: flex;
+    flex-direction: column;     
+    align-items: center;
+}
+
+.main .main__wrapper form input {
+    width: 90%;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    height: 30px;
+    color: #131313;
+    border-radius: 4px;
+    border: none;
+  }
+  
+  #submit__flights {
+    height: 50px;    
+    text-align: center;
+    text-transform: uppercase;
+    background: #EB0069;
+    color: #fff;   
+  }
+  
+  #submit__flights:hover {
+    background: #9E1050;    
+  }
+
+
+  /* Icons section */
+  .icons {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;      
+  }
+
+  .icons h2 {
+    color: #EB0069;
+    font-size: 1.3rem;
+    padding: 1rem 0; 
+    text-transform: uppercase; 
+    text-decoration: underline;
+  }
+
+  .icons__wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding: 2rem 0;      
+  }
+
+  .icons__wrapper .icon {      
+      padding: 0 2rem;
+  }
+
+  .icons__wrapper .icon a {
+      color:#EB0069;
+      font-size: 2rem;
+      padding-top: 1rem;
+  }
+
+  /* flights section */
+
+  .flights h2 {
+    color: #EB0069;
+    font-size: 1.3rem;
+    padding: 1rem 1rem; 
+    text-transform: uppercase; 
+  }
+
+
+  .swiper-wrapper .flight {
+      display: flex;
+      flex-direction: column;      
+      height: 270px;
+      width: 250px;
+      cursor: pointer;
+      border: 0.1rem solid #9E1050;
+      border-radius: 4px;           
+      background: #fff;
+  }
+
+  .swiper-wrapper .flight img {      
+      height: auto;
+      width: 100%;
+      text-align: center;
+      overflow: hidden;
+  }
+
+  .flights .swiper-wrapper .flight h3 {
+      padding: 0 0.5rem;
+      color:#EB0069;
+  }
+
+  .flights .swiper-wrapper .flight p {
+      padding: 0 0.5rem;
+      font-size: smaller;
+      text-transform: none;
+  }
+
+  .book {
+      color: #fff;
+      background: #EB0069;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+      width: auto;  
+      display: none;
+  }
+
+  .activia {
+      display: block;
+      position: static; 
+      bottom: 0;      
+      z-index: 1000;
+  }
+
+
+/* offers section */
+
+.offers {
+    display: flex;
+    flex-direction: column;  
+}
+
+.offers h2 {
+    color: #EB0069;
+    font-size: 1.3rem;
+    padding: 1rem 1rem; 
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;     
+}
+
+.offers .offers__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    opacity: 1;
+}
+
+.offers .offers__wrapper .offer {
+ 
+    background: radial-gradient(#9E1050 , #EB0069);
+    height: 400px; 
+    width: 350px;  
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-items: center;   
+    justify-content: center;
+    margin: 1rem 1rem;
+}
+
+.offers .offers__wrapper .offer a {
+    margin-top: auto;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: #9E1050;    
+    width: 100%;
+    height: 3rem;     
+    display: flex;
+    align-items: center;    
+    justify-content: center;       
+}
+
+.offers .offers__wrapper .offer a p {
+    color: #fff;     
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+
+.offers .offers__wrapper .offer button {
+    margin-top: 8rem;
+    border-radius: 4px;
+    z-index: 1000;
+    height: 4rem;
+    width: 7rem;
+    text-align: center;
+    font-weight: bold;
+    background: lightgray;
+    transition: all 0.3 ease;
+}
+
+
+.offers .offers__wrapper .offer button:hover {
+    transform: scale(1.5);
+    transition: all 0.3 ease-in-out;
+}
+
+/* help section */
+
+.help__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;    
+}
+
+.box {    
+    display: flex;    
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background: #EAD0D0;
+    border: 0.1rem solid #9E1050;
+    border-radius: 4px;
+    margin: 0 1rem;
+}
+
+.box h2 {
+    font-size: 1.5rem;
+    color: #9E1050; 
+    line-height: 3rem;
+}
+
+.box p {
+    padding:0 0.5rem;
+    text-transform: none;
+    text-decoration: underline;
+}
+
+
+.box:first-child{    
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;  
+}
+
+.box:first-child i {
+    font-size: 5rem;
+    color: #9E1050; 
+    padding: 0 0.5rem;    
+}
+
+
+.box:nth-child(2) img {
+    width: 50%;
+    cursor: pointer;
+}
+
+.box:last-child {
+    justify-content: center;
+}
+
+.box:last-child button {    
+    border-radius: 4px;    
+    height: 3.5rem;
+    width: 7rem;
+    text-align: center;
+    font-weight: bold;
+    background: #9E1050;  
+    color:#fff;  
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.box:last-child button:hover {
+    background-color: #EB0069;
+}
+
+/* links styling */
+.links {
+    margin: 1rem;
+}
+
+.links .links__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.links .links__wrapper .link {
+    display: flex;
+    flex-direction: column;
+}
+
+.links .links__wrapper .link h2 {
+    padding: 1rem 0;
+    text-transform: uppercase;
+}
+
+.links .links__wrapper .link a {
+    color: #EB0069;
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+/* footer styling */
+.footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    background: #EB0069;
+    height: 3.5rem;    
+}
+
+.footer__wrapper h2 {
+    color: #fff;
+    margin: 0 1rem;
+}
+
+.footer__wrapper a {
+    color: #fff;
+    margin: 0 0.5rem;
+    font-size: larger;
+}
+
+
+
+
+
+/*media queries*/
+@media screen and (max-width: 1024px) {
+
+    .navbar__wrapper {
+        padding: 0 20px;
+    }
+
+    .navbar__wrapper .logo i {
+        font-size: 1.5rem;
+    }
+
+    .navbar__wrapper .links a {
+        font-size: 0.8rem;
+    }
+
+    .language__menu h2 {
+        font-size: 0.8rem;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .offers .offers__wrapper .offer {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {     
+    .main .main__wrapper form {
+        width: 60%;
+        height: 60%;
+    }
+
+    .main .main__wrapper form input {
+        width: 70%;
+        height: 20px;
+        padding: 5px;
+        margin:5px;
+    }
+
+    #submit__flights {
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .icons h2 {
+        font-size: 1rem;
+    }
+
+    .icons__wrapper {
+        padding: 1rem 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .flights__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;      
+    }
+
+    .offers h2 {
+        font-size: 0.8rem;
+    }
+
+    .offers .offers__wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .offers .offers__wrapper .offer button {
+        width: 30%;
+    }
+
+    .help__wrapper{
+        display: grid;        
+        grid-template-columns: 1fr 1fr 1fr;        
+    }
+
+    .links .links__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .offers .offers__wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .help__wrapper {
+        display: grid;
+        grid-template-columns: 1fr;        
+    }
+
+    .help__wrapper .box {
+        margin: 1rem 1rem;
+    }
+
+    .links .links__wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
